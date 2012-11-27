@@ -1,0 +1,135 @@
+
+#li1{text-align: center;}
+#li2{text-align: center;}
+#li3{text-align: center;}
+#li4{text-align: center; height: 30px;}
+
+#fourPicsContainer{
+	width:auto;
+	position: relative;
+	height: auto;
+	margin: 20px 0 70px 0;
+}
+#fourPicsContainer_contacts{
+	width:auto;
+	position: relative;
+	height: auto;
+	margin: 600px 0 70px 0;
+}
+
+#mainTriD{
+	position: relative;
+	margin-left: 35px;
+}
+
+#mainTriD ul{
+	display:inline;
+}
+
+#mainTriD li , #mainTriD a{
+	position: relative;
+	list-style: none;
+	display: block;
+	float:left;
+	margin-right: 25px;
+	margin-bottom: 31px;
+	width: 210px;
+	height: 30px;
+	background-color: #77c7c4;
+	color: gray;
+	padding-top: 5px;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	
+ }
+
+#mainTriD2{
+	margin: auto;
+	margin-top: 20px;
+
+}
+
+#mainTriD2 ul li, #mainTriD2 a, #mainTrid2 img{
+	position: relative;
+	list-style: none;
+	display: inline;
+	float: left;
+	margin-right:30px;
+	margin-top: 0px;
+	width: 205px;
+	height: 210px;
+	background-color: white;
+ }
+
+/******************************
+********BUTTON HOVER***********
+*******************************/
+
+}
+
+a {
+    text-decoration: none;
+    color: hsl(206, 80%, 50%);
+}
+
+.roll {
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 20px;
+	margin: 0;
+	width: auto;
+	left: -20px;
+
+    -webkit-transition: all 700ms ease;
+       -moz-transition: all 700ms ease;
+    
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+}
+
+    .roll:hover span {
+      width: auto;
+		top: -7px;
+
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+    }
+.roll span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+
+    top: 0;
+    padding: 13px 23px;
+    color: #d49522;
+    background-color: #313f4c;
+	width: 205px;
+	height: 37px;
+	text-align: center;
+	left: 0px;
+	
+
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+
+    -webkit-transform: translate3d( 0px, 50%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 50%, 0px ) rotateX( -90deg );
+}

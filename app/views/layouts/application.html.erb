@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L Dezen</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styles_menu.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/button.css">
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		
+	<div id="wrapper">
+		<div id="mainContainer">
+			<div id="header">
+				<h1>Wear the unique.. own the rare.<br>
+				<%= image_tag("line2.png", :alt => "mainline") %></h1>
+		   </div>
+			
+			<div id="navigation">
+				<ul>
+					<li><%= link_to "Home", "/homepages/" %></li>
+					<li><%= link_to "About", "/homepages/about" %></li>
+					<li><%= link_to "Collection", "/homepages/collection" %></li>
+					<li><%= link_to "Exhibition", "/homepages/exhibition" %></li>
+					<li><%= link_to "Publication", "/homepages/publication" %></li>
+					<li><%= link_to "Contact", "/homepages/contact" %></li>
+				</ul>
+			</div>
+		
+			<br>
+<%= yield %>
+			<div id="fourPicsContainer">
+					<div id="mainTriD">
+						<ul>
+							<li id="li1" class=" roll"><span data-title="NEXT: Hong Kong Nov Show"><a href="#">NEXT: Hong Kong Nov Show</a></span></li>
+							<li id="li2" class=" roll"><span data-title="EXPLORE! INSPIRE! CREATE!"><a href="#">EXPLORE! INSPIRE! CREATE!</a></span></li>
+							<li id="li3" class=" roll"><span data-title="The L'Dezen Jewellery Factory"><a href="#">The L'Dezen Jewellery Factory</a></span></li>
+							<li id="li4" class=" roll"><span data-title="Stay Connected!"><a href="#">Stay Connected!</a></span></li>
+							
+						</ul>
+					</div>		
+			
+				<div id="mainTriD2">
+				<ul>
+					<li><%= image_tag("box.jpg", :width=>"180", :height=>"210") %></li>
+					<li><%= image_tag("box.jpg", :width=>"180", :height=>"210") %></li>
+					<li><%= image_tag("box.jpg", :width=>"180", :height=>"210") %></li>
+					<li><%= image_tag("box.jpg", :width=>"180", :height=>"210") %></li>
+				</ul>
+			</div>
+			</div>
+			
+			<div id="footer">	
+				<a href="#">
+					<div id="footer_content">
+						<h3> &#169 All rights reserved L Dezen Co. Ltd.</h3>
+						<h4> Web designed by Payal Shah.</h4>
+					</div>
+				</a>
+			</div>	
+
+</body>
+</html>

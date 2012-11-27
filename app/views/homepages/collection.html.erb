@@ -1,0 +1,30 @@
+
+			<div id="upperPart">
+				
+				<div id="paragraph">
+					<p>L Dezen's prime design element is being unique.</p>
+					<p>The collection uses the natural and rough-cut rose and flat diamonds mixed with high quality marquise, pear, round and flat diamonds in18K gold to create unique outstanding concepts. </p>
+					<p>Expect to see bright vibrant tasteful color schemes put together using black, yellow and pink diamonds. Our brand has taken the typical floral and paisley patterns commonly used in Jewellery design, and implemented the modern efficient craftsmanship to illustrate an elegant fusion which is seen in the vast variety of rings, earrings, bracelets and necklaces.</p>
+					<p>We offer bespoke excellent and innovation designs with the latest trends and fashion by adopting the latest manufacturing techniques.</p>
+			
+					<h5> Please contact <a href="#">info@ldezen.com</a> for a full catalog.<h5>
+			
+				</div>
+			
+				<div id="flashContainer"></div>
+			
+				<div id="selectcollection">
+					<p>SELECT A COLLECTION:</p>
+						<% @collections.each do |x|%>
+						<%= x.name %>
+					</br>
+						<% x.collection_images.each do |p| %>
+						<%= image_tag p.image.url(:thumb) %>
+						<%end%>
+					<br/>
+					<%end%>
+				</div>
+			
+			</div>	
+		
+			

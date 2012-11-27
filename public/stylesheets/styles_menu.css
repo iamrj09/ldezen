@@ -1,0 +1,59 @@
+/*********************
+****MENU STYLES****
+*********************/
+
+/*#navigation{
+	position: relative;
+}
+
+#navigation ul{
+	dis*/
+@font-face {
+  font-family: 'Times New Roman';
+  src: url('lib/font/TrajanPro-Regular.ttf') format('truetype'),  /* Firefox 3.6+, IE9+, Chrome 6+, Safari 5.1+*/
+}
+
+
+
+body{
+	background: #00102b;
+	background-repeat: repeat;
+	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;}
+
+#navigation{
+	position: relative;
+	width: 986px;
+	text-align: center;
+}
+
+#navigation ul{
+	display: inline;
+	
+}
+
+#navigation li {
+	margin: 0 10px;
+}
+
+#navigation li , #navigation a{
+	position: relative;
+	list-style: none;
+	display: inline;
+	height: 30px;
+	background-color: #0a1322;
+	color: #06aedb;
+	padding:  5px 10px;
+	font-size: 95%;
+	text-align: center;
+	font-family: TrajanPro-Regular;
+	
+}
+
+#navigation #here li , #here a:link{
+	color: #FFFFFF;
+	margin: 0 10px;
+	background-color: #010a19;
+	font-size: 95%;
+}
