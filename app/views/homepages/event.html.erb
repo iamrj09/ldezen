@@ -1,0 +1,23 @@
+			<div id="upperPart_publication">
+				
+				<div id="flashContainer_events1">
+					
+					<div id="flashContainer_events">
+						<h2>Events/Shows</h2>
+						
+						<ul id="events">
+							<% @event.each do |x| %>
+							<li style = "text-shadow: 1px 1px #ff0000;"><%= x.date %></li>
+								<br/>
+								<br/>
+							<% x.event_images.each do |pass| %>
+							<%= image_tag pass.image.url()%>
+							<%end%>
+							<br/>
+						<%end%>
+						</ul>
+						
+					</div>
+				
+				</div>
+			</div>

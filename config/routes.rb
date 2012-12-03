@@ -1,7 +1,10 @@
 Site::Application.routes.draw do
+
+resources :usermails, :only => [:create, :index]
+
 ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+devise_for :admin_users, ActiveAdmin::Devise.config
   
 resources :homepages do
     collection do
@@ -10,10 +13,11 @@ resources :homepages do
       get :exhibition
       get :contact
       get :publication
+      get :event
+      get :calendar
     end
 
-  end
-resources :collections  
+  end  
 
   root to: "homepages#index"
 
