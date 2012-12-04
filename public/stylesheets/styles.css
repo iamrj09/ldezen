@@ -1,3 +1,5 @@
+
+
 @-webkit-keyframes fade {
 	0% 	{ opacity: 0.5;}
 	50%	{ opacity: 0.9;}
@@ -148,7 +150,7 @@ h2{
  height: 40px;
  margin: auto;
  margin-left: 0;
- margin-top: 300px;
+ margin-top: 250px;
  background-color: white;
  border-top: #5c574a solid 5px;
  position: absolute;
@@ -265,7 +267,7 @@ h2{
 	opacity: 1;
 	text-align: center;
 	font-family: "Virinda";
-	font-size: 80%;
+	font-size: 12.8px;
 	color: white;
 	margin-left: 15px;
 	width: 210px;
@@ -277,7 +279,7 @@ h2{
 	position: relative;
 	top: 20px;
 	left: 40px;
-	width: 50px;
+	width: 1000px;
 	height: 50px;
 }
 
@@ -300,10 +302,10 @@ h2{
 *******************************/
 
 #aboutFlash{
-	width: 986px;
-	height: 80px;
+	width: 400px;
+	height: 200px;
+/*	background: White;*/
 	margin: auto;
-	margin-left: 0;
 	margin-top: 40px;
 }
 
@@ -313,6 +315,10 @@ h2{
 	text-align: center;
 	width: 900px;
 	color: #c9d0e3;
+}
+
+#carousel{
+	margin: 50px 0 0 100px;
 }
 
 #linkPayal{
@@ -338,7 +344,7 @@ h2{
 	margin: 80px 0 0 25px;
 	float:left;
 	text-align: center;
-	font-size: 15px;
+	font-size: 12.8px;
 	font-family: "Ms Serif Regular";
 	letter-spacing: 1px;
 	word-spacing: 3px;
@@ -403,7 +409,6 @@ h2{
 /******************************	
 ***CSS STYLES FOR EXHIBITION***
 *******************************/
-
 #upperPart_exhibition{
 	position: relative;
 	width:986px;
@@ -411,24 +416,15 @@ h2{
 	margin-bottom:400px;
 }
 
-#upperPart_publication{
-	position: relative;
-	width:986px;
-	margin-top: 50px;
-}
 
-#upperPart_contact{
-	position: relative;
-	width: 986px;
-	height: 600px;
-	margin: 0 0 0 0;
-}
+
+
 
 #text1{
 	width: 600px;
 	height: 30px;
 	font-family: Trajan Pro;
-	font-size: 80%;
+	font-size: 90%;
 	color: white;
 	margin-right: 20px;
 	
@@ -445,51 +441,79 @@ h2{
 	width: 670px;
 	height: 320px;
 	background-color: white;
-	background-image: url(../Images/exhibition.png);
+	background-image: url(/exhibition.png);
 	position: relative;
 	float:left 
 }
-	
 
-#buttonListA{
-	float: left;
+#upperPart_exhibition{
 	position: relative;
-	margin-left: -40px;
-	margin-top: -16px;
-	color: #5c574a
+	width:986px;
+	height: 140px;
+	margin-top: 100px;
+	margin-bottom:400px;
+}
+	
+/***BUTTON A****/	
+
+#buttonA_text{
+		-webkit-transition: color 0.5s linear;
+			-moz-transition: color 0.5s linear;
+				-o-transition: color 0.5s linear;
+					-ms-transition: color 0.5s linear;
+						transition: color 0.5s linear;
+						
+	color: #5C574A;
+	margin-top: 100px;
+	width:100px;
+	height:50px;
+	font-size: 14px;
+
 }
 
-#buttonListA ul a{
-	display: block;
+#buttonA_text:hover{
+	color: white;
+}
+
+#buttonA{
+	position: relative;
+	float: right;
+	width: 268px;
+	height: 29px;
+	padding-top:10px;
+	
+		-webkit-transition: background-image 0.5s linear;
+			-moz-transition: background-image 0.5s linear;
+				-o-transition: background-image 0.5s linear;
+					-ms-transition: background-image 0.5s linear;
+						transition: background-image 0.5s linear;
+						
+			background-image: url(/exhibition/buttonA1.png)
+}
+
+#buttonA:hover{
+	position: relative;
+	float: right;
+	width: 268px;
+	height: 29px;
+	background-image: url(/exhibition/buttonA2.png);
+}
+
+#buttonA p{
+	margin-top: 100px;
+}
+
+.buttonListA{
+	font-size: 15px;
+	float: right;
+	position: absolute;
+	padding-left: 630px;
+	margin-top: -65px;
+}
+
+.buttonListA li{
 	list-style: none;
-	color: #5c574a;
-	padding-top: 5px;
-	padding-left: 11px;
-}
-
-#buttonListA ul li{
-	list-style: none;
-	width:267px;
-	height: 28px;
-	background:url(../Images/buttonA.jpg) 0 0;
-	color: #5c574a;
-	margin-bottom:20px;
-}
-
-#buttonListA ul li:hover{
-	background: url(../Images/buttonA.jpg) 0 -30px;
-	-webkit-animation: fade 1s none; /* Safari 5, Chrome */
-     -moz-animation: fade 1s none; /* Firefox 5-15 */
-       -o-animation: fade 1s none; /* Opera 12+ */
-          animation: fade 1s none; /* Safari 5, Chrome, Firefox 16+ */
-}
-
-#buttonListA a:hover{
-	color:white;
-	-webkit-animation: fade 1s none; /* Safari 5, Chrome */
-     -moz-animation: fade 1s none; /* Firefox 5-15 */
-       -o-animation: fade 1s none; /* Opera 12+ */
-          animation: fade 1s none; /* Safari 5, Chrome, Firefox 16+ */
+	padding-top: 50px;
 }
 
 /******B*****/
@@ -497,15 +521,15 @@ h2{
 	position:relative;
 	float: right;
 	color: #5c574a;
-	margin-top: 50px;
-	
+	margin-top: 180px;	
+	padding-bottom: 8px;
 }
 
 #buttonListB ul a{
 	display: block;
 	list-style: none;
-	color: #5c574a;
-	padding: 13px;
+	padding: 18px;
+	padding-left: 30px;	
 }
 
 
@@ -513,46 +537,54 @@ h2{
 	border-top-left-radius: 1em 1em;
 	border-bottom-left-radius: 1em 1em;
 	width:249px;
-	height: 46px;
+	height: 50px;
 	color: #5c574a;
-	background-color: white;
-	list-style: none
 	
-
-		
+	list-style: none;	
+	
+		-webkit-transition: background-image 0.5s linear;
+		-moz-transition: background-image 0.5s linear;
+			-o-transition: background-image 0.5s linear;
+				-ms-transition: background-image 0.5s linear;
+					transition: background-image 0.5s linear;
+					
+	background-image: url('/exhibition/buttonB1.png');
+	background-size:290px 50px;
 }
 
 #buttonListB ul li:hover{
-	/*background: url(../Images/buttonA.jpg) 0 -30px;*/
-	
-	color: white;
-	-webkit-animation: fade 1s none; /* Safari 5, Chrome */
-     -moz-animation: fade 1s none; /* Firefox 5-15 */
-       -o-animation: fade 1s none; /* Opera 12+ */
-          animation: fade 1s none; /* Safari 5, Chrome, Firefox 16+ */
-	
-	background-color: #e81e1a;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#e81e1a)); /* Safari 4+, Chrome */
-	background-image: -webkit-linear-gradient(top, #FFFFFF, #e81e1a); /* Chrome 10+, Safari 5.1+, iOS 5+ */
-	background-image:    -moz-linear-gradient(top, #FFFFFF, #e81e1a); /* Firefox 3.6-15 */
-	background-image:      -o-linear-gradient(top, #FFFFFF, #e81e1a); /* Opera 11.10-12.00 */
-	background-image:         linear-gradient(to bottom, #FFFFFF, #e81e1a); /* Firefox 16+, IE10, Opera 12.50+ */
+	background-image: url('/exhibition/buttonB2.png');
+	background-size:290px 50px;
+	background-repeat: no-repeat;
 }
 
- #buttonListB a:hover {
-	color: white;
-	-webkit-animation: fade 1s none; /* Safari 5, Chrome */
-     -moz-animation: fade 1s none; /* Firefox 5-15 */
-       -o-animation: fade 1s none; /* Opera 12+ */
-          animation: fade 1s none; /* Safari 5, Chrome, Firefox 16+ */
+#buttonListB_text{
+	letter-spacing: 1px;
+	list-style: none;	
 	
- }
+		-webkit-transition: color 0.5s linear;
+		-moz-transition: color 0.5s linear;
+			-o-transition: color 0.5s linear;
+				-ms-transition: color 0.5s linear;
+					transition: color 0.5s linear;
+					
+	color: #5c574a;
+	font-size: 14px;
+}
 
+#buttonListB_text:hover{
+	color: White;
+}
 
 
 /******************************	
 ***CSS STYLES FOR PUBLICATION**
 *******************************/
+#upperPart_publication{
+	position: relative;
+	width:986px;
+	margin-top: 50px;
+}
 
 #opt{
 	position: relative;
@@ -675,6 +707,13 @@ h2{
 /******************************
 ***CSS STYLES FOR CONTACTS*****
 *******************************/
+
+#upperPart_contact{
+	position: relative;
+	width: 986px;
+	height: 600px;
+	margin: 0 0 0 0;
+}
 
 #mainImage{
 	position: absolute;

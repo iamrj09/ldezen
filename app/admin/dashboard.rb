@@ -73,8 +73,8 @@ menu :priority => 1
               str  = []
               str << link_to(event.date, admin_event_path(event))
 
-              event.event_images.eah do |holder|
-                str << "<div style = 'float:right; margin-right: 700'>"
+              event.event_images.each do |holder|
+                str << "<div style = 'float:right; margin-right: 750px;'>"
               str << holder.image.url(:thumb) if !holder.image_file_name.blank?
                 str << "</div>"
                 str << "<br/>"

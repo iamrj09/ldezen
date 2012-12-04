@@ -34,4 +34,15 @@ Site::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address        => 'smtp.gmail.com',
+    :domain         => 'localhost',
+    :port           => 587,
+    :user_name      => 'sofrj09@gmail.com',
+    :password       => 'sofrj200900457',
+    :authentication => :plain
+  }
 end

@@ -10,9 +10,7 @@ ActiveAdmin.register Collection do
   	frm.inputs "Collection Images" do
   		frm.has_many :collection_images do |subfrm|
   			if !subfrm.object.id.nil?
-  				subfrm.input :_destroy, :as => :boolean, :label => "Delete this entry? #{subfrm.object.image_file_name}"
-  			else
-  				"File must not be empty" 
+  				subfrm.input :_destroy, :as =>:boolean, :label => "Delete this entry? #{subfrm.object.image_file_name}" 
   			end
   			subfrm.input :image, as: :file
   		end
@@ -20,7 +18,6 @@ ActiveAdmin.register Collection do
 
   	frm.buttons
 	end
-
 #:as = :boolen is a built in yes or no message box.
 
   show do

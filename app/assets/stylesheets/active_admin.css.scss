@@ -27,3 +27,49 @@
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
+
+body.active_admin
+{
+	background: #E7ECFF;
+}
+
+.download_links
+{
+	display:none;
+}
+#footer
+{
+	display:none;
+}
+#page_title
+{
+	color: #7995FC;
+	text-shadow: 0.1em 0.1em 0.07em #333;
+}
+#page_title:hover
+{
+	color:#1250FA;
+	
+}
+
+#title_bar
+{
+	background-color: red;
+}
+#main_content
+{
+	background: white;
+	padding: 5px;
+	border-radius: 8px;
+	box-shadow:5px 5px 3px #888888;	
+}
+.pagination_information
+{
+	display:none;
+}
+#sidebar
+{
+	box-shadow:5px 5px 3px #888888;
+	background: #E0E1E4;
+	border-radius: 5px;
+}

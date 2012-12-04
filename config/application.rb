@@ -10,17 +10,7 @@ if defined?(Bundler)
 end
 
 module Site
-  class Application < Rails::Application
-   ActionMailer::Base.smtp_settings = 
-  {
-
-    :address            => 'smtp.gmail.com',
-    :port               => 587,
-    :domain             => 'localhost', #you can also use google.com
-    :authentication     => :plain,
-    :user_name          => 'sofrj09@gmail.com',
-    :password           => 'sofrj200900457'
-}
+    class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

@@ -4,8 +4,9 @@ def create
     @usermail = Usermail.new(params[:usermail])
 
     respond_to do |format|
-      if @usermail.save
+      if !@usermail.blank?
         ContactUs.user_mail(@usermail).deliver
+        ContactUs.user_mail2(@usermail).deliver
         format.html { redirect_to usermails_path, notice: 'Your message was successfully sent.' }
         format.json { render json: @usermail, status: :created, location: @usermail }
       else

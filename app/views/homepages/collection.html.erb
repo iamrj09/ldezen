@@ -15,16 +15,17 @@
 			
 				<div id="selectcollection">
 					<p>SELECT A COLLECTION:</p>
-						<% @collections.each do |x|%>
-						<%= x.name %>
-					</br>
-						<% x.collection_images.each do |p| %>
-						<%= image_tag p.image.url(:thumb) %>
-						<%end%>
-					<br/>
+				</div>
+				<div style = "margin-left: 340px;">
+				<% @collections.each do |x|%>
+						<li style = "display:inline">
+						<%= link_to x.name %>
+						</li>
+					<% x.collection_images.each do|p| %>
+					<%= image_tag p.image.url(:thumb)%>
+					<%end%>
 					<%end%>
 				</div>
-			
 			</div>	
 		
 			
